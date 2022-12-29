@@ -1,48 +1,167 @@
-.header_sidebar img{
+header{
+    display: flex;
+    align-items: flex-start;
+  
+    margin: 0 auto;
+    height:680px; 
+  }
+  .header_sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  
+    height: 100%;
+    width: 155px;
+  }
+  .header_sidebar img {
+    margin-top: 50px;
     width: 80px;
-}
-
-.header_sidebar .social a {
-    font-weight: 600;
-    font-size: 18px;
-    letter-spacing: 2px;
-    text-transform: capitalize;
-}
-
-.header_sidebar .social a:nth-child(2){
-    color: var(--main-color);
-}
-
-.header_sidebar .social a:nth-child(3){
+  }
+  .header_sidebar .social{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .header_sidebar .social .rectangle{
+    display: block;
+    height: 60px;
+    width: 2px;
+    background-color: var(--title-color);
+  }
+  .header_sidebar .social a {
     color: var(--title-color);
-}
-
-.header_content .navbar .navbar_booking{
-    color: var(--white);
-    font-size: 16px;
-}
-
-.header_content .navbar .navbar_menu li a{
-    color: var(--white);
-    font-size: 16px;
-}
-
-.header_content .banner-text .label{
-    color: var(--text-color-2);
+    display: block;
+    height: 100px;
+    line-height: 100px;
+    font-weight: 600;
     font-size: 14px;
+    letter-spacing: 2px;
+  
+    text-transform: capitalize;
+    transform: rotate(-90deg);
+  }
+  .header_sidebar .social a:hover{
+    color: var(--main-color);
+  }
+  
+  
+  .header_content {
+    position: relative;
+    background-color: var(--dark-bg-1);
+    height: 100%;
+    padding: 50px;
+    width: calc(100% - 155px);
+  }
+  .header_content .navbar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+    height: 50px;
+    z-index: 10;
+  }
+  .header_content .navbar .navbar_menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+  .header_content .navbar .navbar_menu li a {
+    text-transform: capitalize;
+    color: var(--white);
+    font-size: 16px;
+  }
+  .header_content .navbar .navbar_menu li a:hover {
+    color: var(--main-color);
+  }
+  
+  .header_content .navbar .navbar_booking {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  
+    font-size: 16px;
+    gap: 20px;
+  }
+  .header_content .navbar .navbar_booking a{
+    color: var(--white);
+  }
+  .header_content .navbar .navbar_booking a:hover {
+    color: var(--main-color);
+  }
+  .header_content .banner-text{
+    position: relative;
+    margin-left: 80px;
+    margin-top: 150px;
+    width: 50%;
+    z-index: 10;
+  }
+  
+  .header_content .banner-text .label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  
+    color: var(--text-color-2-60);
+    font-size: 14px;
+    letter-spacing: 2px;
+  
+    margin-bottom: 20px;
     opacity: 0.6;
-    text-transform: uppercase;
-}
-
-.header_content .banner-text h1{
+  }
+  
+  .header_content .banner-text .label::before{
+    background-color: var(--text-color-2-60);
+    content: "";
+    width: 80px;
+    height: 1.5px;
+    display: block;
+  }
+  .header_content .banner-text h1 {
+    color: var(--white);
     text-transform: capitalize;
     font-size: 75px;
-    font-weight: 600;
+    font-weight:700;
     font-family: "Raleway", sans-serif;
-}
-
-.header_content .banner-text .info {
+  
+    margin-bottom: 20px;
+  }
+  .header_content .banner-text .info {
     color: var(--text-color-2);
     font-size: 16px;
-    text-transform: uppercase;
-}
+    font-weight: 300;
+  }
+  .header_content .slider{
+    width: 100%;
+    height: 100%;
+  
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden; 
+  }
+  
+  .header_content .slider img{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  
+    width: 100%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+  
+  .header_content .overlay{
+    width: 100%;
+    height: 100%;
+  
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 5;
+  }

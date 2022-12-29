@@ -1,39 +1,116 @@
-.services{
+.services {
+    position: relative;
     background-color: var(--dark-bg-3);
-}
-
-.services .label{
+    padding: 100px 0;
+  }
+  .services .label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  
     color: var(--text-color-2);
     font-size: 14px;
     font-weight: 600;
+  
+    margin: 0 auto 20px auto;
     text-transform: uppercase;
-    opacity: .6;
-}
-
-.services .section-title{
+    opacity: 0.6;
+    position: relative;
+    z-index: 5;
+    width: 1200px;
+  }
+  .services .label .rectangle {
+    display: block;
+    height: 1px;
+    width: 80px;
+    background-color: var(--text-color-2);
+  }
+  .services .section-title {
     color: var(--white);
     font-family: "Raleway", sans-serif;
     font-size: 42px;
     font-weight: 700;
+  
     text-transform: capitalize;
-}
-
-.service-table >table:nth-child(1){
+    margin: 0 auto 30px auto;
+    position: relative;
+    width: 1200px;
+    z-index: 5;
+  }
+  .services .service_tables {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  
+    margin: 0 auto 50px auto;
+    position: relative;
+    width: 1200px;
+    z-index: 5;
+  }
+  
+  .services .service_tables > table tbody tr td{
+    padding-top: 20px;
+  }
+  .services .service_tables > table tbody tr .desc{
+    width: calc(100% - 55%)
+  }
+  .services .service_tables > table tbody tr .underline{
+    border-bottom: solid 1px var(--text-color-2-12per);
+   
+    width: 30%;
+  }
+  .services .service_tables > table tbody tr .price{
+    width: 25%;
+  }
+  
+  .services .service_tables > table:nth-child(1) {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  
     /* fallback for old browsers */
     background: #171a24;
     /* Chrome 10-25, Safari 5.1-6 */
-    background: -webkit-linear-gradient(to bottom, #171a24, rgba(23,26,36,0.2));
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+ Safari 7+  */
-    background: linear-gradient(to bottom, #171a24,rgba(23, 26, 36, 0.2));
+    background: -webkit-linear-gradient(
+      to bottom,
+      #171a24,
+      rgba(23, 26, 36, 0.2)
+    );
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to bottom, #171a24, rgba(23, 26, 36, 0.2));
     color: var(--text-color-2);
-}
-
-.service-table>table:nth-child(2) {
+    display: block;
+    padding: 40px;
+    width: 50%;
+  }
+  .services .service_tables > table:nth-child(2) {
     /* fallback for old browsers */
     background: #090b13;
     /* Chrome 10-25, Safari 5.1-6 */
     background: -webkit-linear-gradient(to bottom, #090b13, rgba(9, 11, 19, 0.2));
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+ Safari 7+  */
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background: linear-gradient(to bottom, #090b13, rgba(9, 11, 19, 0.2));
+  
     color: var(--text-color-2);
-}
+    display: block;
+    padding: 40px;
+    width: 50%;
+  }
+  .services .btn-dark {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    z-index: 5;
+  }
+  .services .background {
+    background-image: url("../images/img_services_background.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    opacity: .2;
+    top: 0;
+    width: 100%;
+  }
+  

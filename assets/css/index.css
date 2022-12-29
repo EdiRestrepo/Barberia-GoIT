@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-@import "./minireset.min.css"; /*Descargar el minireset como archivo css y agregarlo al proyecto para importarlo aqui*/
+@import "./minireset.min.css";
 @import "./about.css";
 @import "./barbers.css";
 @import "./contacto.css";
@@ -11,35 +11,58 @@
 @import "./services.css";
 
 :root {
-    --dark-bg-1:    #191c26;
-    --dark-bg-2:    #090B13;
-    --dark-bg-3:    #111319;
-    --light-gray:   #f7f7f7;
-    --main-color:   #ff6c00;
-    --text-color-1: #555555; 
-    --text-color-2: #9DA4BD;
-    --title-color:  #303030;
-    --white:        #ffffff;
+  --dark-bg-1:    #191c26;
+  --dark-bg-2:    #090B13;
+  --dark-bg-3:    #111319;
+  --light-gray:   #f7f7f7;
+  --main-color:   #ff6c00;
+  --text-color-1: #555555;
+  --text-color-2: #9DA4BD;
+  --text-color-2-12per: rgba(157, 164, 189, 0.12);
+  --text-color-2-60: rgba(157, 164, 189, 0.6);
+  --title-color:  #303030;
+  --white:        #ffffff;
 }
-
-body{
-    font-family: "Open Sans", sans-serif;
+*{
+  scroll-behavior: smooth;
 }
-
+body {
+  font-family: "Open Sans", sans-serif;
+}
 a{
-    text-decoration: none;
-}
-
-.btn-light{
-    background-color: transparent;
-    color: var(--title-color);
-    text-transform: uppercase;
-    font-size: 16px;
+  text-decoration: none;
 }
 
 .btn-dark{
-    background-color: transparent;
-    color: var(--white);
-    text-transform: uppercase;
-    font-size: 16px;
+  background-color: transparent;
+  color: var(--white);
+  cursor: pointer;
+  font-size: 16px;
+  border: solid 1px var(--main-color);
+  border-radius: 25px;
+  
+  height: 40px;
+  text-transform: uppercase; 
+  padding: 0 20px;
+}
+.btn-dark:hover{
+  background-color: var(--main-color);
+  color: var(--white);
+}
+
+.btn-light{
+  background-color: transparent;
+  color: var(--title-color);
+  cursor: pointer;
+  font-size: 16px;
+  border: solid 1px var(--main-color);
+  border-radius: 25px;
+  
+  height: 40px;
+  text-transform: uppercase; 
+  padding: 0 20px;
+}
+.btn-light:hover{
+  background-color: var(--main-color);
+  color: var(--white);
 }

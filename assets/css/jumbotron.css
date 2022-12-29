@@ -1,45 +1,80 @@
-.jumbotron .jumbotron_scores .left-column > article,
-.jumbotron .jumbotron_scores .right-colum > article {
+.jumbotron {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  
+    margin: 150px auto 50px auto;
+    width: 1200px;
+  }
+  
+  .jumbotron .jumbotron_scores {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+  
+    width: 48%;
+  }
+  
+  .jumbotron .jumbotron_scores .right-column{
+    transform: translateY(30px);
+  }
+  
+  .jumbotron .jumbotron_scores .left-column > article,
+  .jumbotron .jumbotron_scores .right-column > article {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  
     background-color: var(--light-gray);
     color: var(--title-color);
     font-family: "Open Sans", sans-serif;
-}
-
-.jumbotron .jumbotron_scores .left-column > article h2,
-.jumbotron .jumbotron_scores .right-colum > article h2{
+    height: 133px;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 170px;
+  }
+  
+  .jumbotron .jumbotron_scores .left-column > article h2,
+  .jumbotron .jumbotron_scores .right-column > article h2 {
     font-weight: 700;
     font-size: 42px;
-}
-
-.jumbotron .jumbotron_scores .left-column > article h2 sup,
-.jumbotron .jumbotron_scores .right-colum > article h2 sup {
+  }
+  
+  .jumbotron .jumbotron_scores .left-column > article h2 sup,
+  .jumbotron .jumbotron_scores .right-column > article h2 sup {
     color: var(--main-color);
     font-size: 22px;
     font-weight: 600;
-}
-
-.jumbotron .jumbotron_scores .left-column > article h4,
-.jumbotron .jumbotron_scores .right-colum > article h4 {
+  }
+  
+  .jumbotron .jumbotron_scores .left-column > article h4,
+  .jumbotron .jumbotron_scores .right-column > article h4 {
+    font-size: 14px;
     font-weight: 600;
-}
-
-.jumbotron .jumbotron_content .label{
+    text-align: center;
+  }
+  
+  .jumbotron .jumbotron_content {
+    width: 48%;
+  }
+  
+  .jumbotron .jumbotron_content .label {
     color: var(--title-color);
     font-size: 14px;
     font-weight: 600;
     text-transform: uppercase;
-}
-
-.jumbotron .jumbotron_content .secction-title{
+  }
+  .jumbotron .jumbotron_content .section-title {
     color: var(--title-color);
     font-family: "Raleway", sans-serif;
     font-size: 42px;
     font-weight: 700;
     text-transform: capitalize;
-}
-
-.jumbotron .jumbotron_content .description{
+  }
+  .jumbotron .jumbotron_content .description {
     font-style: 16px;
     line-height: 25px;
     color: var(--text-color-1);
-}
+  }

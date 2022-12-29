@@ -10,7 +10,7 @@
 
 
 ### **Enlace a la página en vivo:**
-[BarberiaGoIT.com](https://edirestrepo.github.io/Barberia-GoIT/ "barberia-goit")
+[WebStudio.com](https://edirestrepo.github.io/WebStudio-GoIT/ "homework-7")
 
 👌💻
 
